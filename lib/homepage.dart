@@ -39,7 +39,7 @@ class Homepage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      "Hi Jenifer!",
+                      "Hi Patchara!",
                       style: TextStyle(
                           fontSize: 30,
                           fontWeight: FontWeight.bold,
@@ -156,12 +156,105 @@ class Homepage extends StatelessWidget {
                 ),
                 Text("View all", style: TextStyle(color: Colors.grey))
               ],
+            ),
+            Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 0, top: 20),
+                  child: Padding(
+                    padding: const EdgeInsets.all(5.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 150,
+                          height: 150,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            color: const Color(0xFF0E397D),
+                          ),
+                          child: const Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: EdgeInsets.only(top: 15.0, left: 10),
+                                child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "May 30 2022",
+                                      style: TextStyle(
+                                          color: Color.fromARGB(
+                                              162, 255, 255, 255)),
+                                    ),
+                                    Icon(
+                                      Icons.more_vert_rounded,
+                                      color: Colors.white,
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(
+                                    Icons.devices,
+                                    color: Colors.white,
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Mobile App",
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                      Text("E - Commerce",
+                                          style: TextStyle(color: Colors.white))
+                                    ],
+                                  )
+                                ],
+                              ),
+                              SizedBox(
+                                height: 15,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(left: 20.0),
+                                child: Text(
+                                  "Progress",
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(top: 10, left: 100.0),
+                                child: Text(
+                                  "50%",
+                                  style: TextStyle(
+                                      fontSize: 15, color: Colors.white),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
             )
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Color(0xFF11366B),
+        backgroundColor: const Color(0xFF11366B),
         onPressed: () {},
         child: const Icon(
           Icons.add,
@@ -170,7 +263,7 @@ class Homepage extends StatelessWidget {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
-        shape: CircularNotchedRectangle(),
+        shape: const CircularNotchedRectangle(),
         notchMargin: 10,
         child: Container(
           height: 60,
