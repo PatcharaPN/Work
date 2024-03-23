@@ -170,8 +170,14 @@ class Homepage extends StatelessWidget {
                           width: 150,
                           height: 150,
                           decoration: BoxDecoration(
+                            gradient: const LinearGradient(
+                                colors: [
+                                  Color.fromARGB(255, 27, 73, 160),
+                                  Color(0xFF0D2E55),
+                                ],
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter),
                             borderRadius: BorderRadius.circular(15),
-                            color: const Color(0xFF0E397D),
                           ),
                           child: const Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
