@@ -1,3 +1,4 @@
 # flutter_clone
 
-A new Flutter project.
+Clone App for practice
+
